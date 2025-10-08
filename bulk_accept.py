@@ -14,7 +14,7 @@ from telethon import TelegramClient
 API_ID = int(os.getenv("26829892") or 0)
 API_HASH = os.getenv("fcbc942ecc37b61a81d052a4b71de265")
 BOT_TOKEN = os.getenv("8147350098:AAEFIvEvRXUTQEZvy9zC9sqQS2mfRRJGmAU")
-TARGET_CHAT = os.getenv("8257649811")  # required
+TARGET_CHAT = os.getenv("@crop_link_bot")  # required
 
 if not (API_ID and API_HASH and BOT_TOKEN and TARGET_CHAT):
     raise RuntimeError("Set TELETHON_API_ID, TELETHON_API_HASH, BOT_TOKEN, TARGET_CHAT_ID")
