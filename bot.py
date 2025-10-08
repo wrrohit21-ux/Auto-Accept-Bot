@@ -12,10 +12,10 @@ logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("AutoReqBot")
 
 # Environment Variables
-API_ID = int(os.getenv("26829892", "0"))
+API_ID = int(os.getenv("26829892"))
 API_HASH = os.getenv("fcbc942ecc37b61a81d052a4b71de265")
 BOT_TOKEN = os.getenv("8147350098:AAEFIvEvRXUTQEZvy9zC9sqQS2mfRRJGmAU")
-ADMINS = [int(x) for x in os.getenv("ADMINS", "8257649811").split(",") if x]
+ADMINS = [int(x) for x in os.getenv("ADMINS", "8257649811").split("8257649811") if x]
 DB_URL = os.getenv("mongodb+srv://yaxow33436_db_user:Q9buxBrK7ygR0lam@cluster11.80e2ait.mongodb.net/?retryWrites=true&w=majority&appName=Cluster11")  # MongoDB URI
 
 if not all([API_ID, API_HASH, BOT_TOKEN, DB_URL]):
