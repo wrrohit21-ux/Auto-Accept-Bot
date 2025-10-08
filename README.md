@@ -1,21 +1,16 @@
-# Telegram Auto-Request-Accept Bot
+# Auto Request Accept Bot (Koyeb Ready)
 
-Features:
-- Auto-approve join requests for bound group(s).
-- Bind group with `/setgroup` (run inside the group as admin).
-- Enable/disable with `/enable` and `/disable`.
-- One-off bulk accept script included.
+This bot automatically **approves join requests** in Telegram groups/channels.
 
 ## Setup
 
-1. Create a bot with @BotFather and get `BOT_TOKEN`.
-2. (Optional) Get `TELETHON_API_ID` and `TELETHON_API_HASH` from my.telegram.org for bulk accept script.
-3. Set environment variables:
-   - `BOT_TOKEN` (required)
-   - `DB_PATH` (optional, default `./bot.db`)
-   - `TELETHON_API_ID`, `TELETHON_API_HASH`, `TARGET_CHAT_ID` for `bulk_accept.py`.
-4. Run locally:
-   ```bash
-   pip install -r requirements.txt
-   export BOT_TOKEN="123:ABC..."
-   python main.py
+1. Get your **BOT_TOKEN** from @BotFather
+2. Get **API_ID** & **API_HASH** from [my.telegram.org](https://my.telegram.org)
+3. Create a **MongoDB Atlas** free cluster → get **DB_URL**
+4. Add your bot as **admin** to your group/channel with "Approve Join Requests"
+
+## Deploy to Koyeb
+
+1. Fork or upload this repo to GitHub
+2. In Koyeb → Create Service → Connect GitHub
+3. Build Command:
