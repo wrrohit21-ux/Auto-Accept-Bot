@@ -1,4 +1,5 @@
 __pycache__/
 *.pyc
-*.session*
+data/
+bot.db
 .env
