@@ -1,2 +1,2 @@
-python-telegram-bot==21.6
-telethon==1.29.0
+telethon==1.33.1
+pymongo==4.5.0
